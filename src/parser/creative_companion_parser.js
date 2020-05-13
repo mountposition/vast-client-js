@@ -22,6 +22,7 @@ export function parseCreativeCompanion(creativeElement, creativeAttributes) {
       companionAd.id = companionResource.getAttribute('id') || null;
       companionAd.width = companionResource.getAttribute('width');
       companionAd.height = companionResource.getAttribute('height');
+      companionAd.renderingMode = companionResource.getAttribute('renderingMode');  // for rendering mode v4.1
       companionAd.companionClickTrackingURLTemplates = [];
 
       parserUtils
